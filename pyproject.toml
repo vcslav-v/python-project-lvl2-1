@@ -1,14 +1,21 @@
 [tool.poetry]
 name = "python-project-lvl2"
-version = "0.1.0"
+version = "2.1.2"
 description = ""
 authors = ["Malafeev Artem"]
-
+packages = [
+  { include = "gendiff" },
+]
 [tool.poetry.dependencies]
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.8.4"
+pylint = "^2.6.0"
+argparse = "^1.4.0"
+
+[tool.poetry.scripts]
+gendiff = "gendiff.scripts.gendiff:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
