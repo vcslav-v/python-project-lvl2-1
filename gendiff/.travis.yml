@@ -1,0 +1,6 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=7b712c93e40bc1ae3e6d3d6969610fd1df28942b910876c3584ae7e6c1ac6de3
+
+language: python
+python: 3.8.5
